@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const base = Astro.base === "/" ? "" : Astro.base;
+const withBase = (path: string) => `${base}${path}`;
 ---
 
 <BaseLayout title="Home" description="Placeholder hero copy for the upcoming author site.">
@@ -12,8 +15,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         that introduces the book, speaking, and consulting work.
       </p>
       <div class="cta-row">
-        <a class="button primary" href={Astro.resolve("/book")}>Primary CTA</a>
-        <a class="button secondary" href={Astro.resolve("/contact")}>Secondary CTA</a>
+        <a class="button primary" href={withBase("/book")}>Primary CTA</a>
+        <a class="button secondary" href={withBase("/contact")}>Secondary CTA</a>
       </div>
     </div>
   </section>

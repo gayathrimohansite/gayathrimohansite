@@ -6,6 +6,8 @@ interface Props {
 
 const { title = "Gayathri Mohan", description = "Author, engineer, and speaker." } = Astro.props;
 const pageTitle = `${title} | Gayathri Mohan`;
+const base = Astro.base === "/" ? "" : Astro.base;
+const withBase = (path: string) => `${base}${path}`;
 ---
 <!doctype html>
 <html lang="en">
@@ -14,19 +16,19 @@ const pageTitle = `${title} | Gayathri Mohan`;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
-    <link rel="stylesheet" href={Astro.resolve("/src/styles/global.css")} />
+    <link rel="stylesheet" href={withBase("/src/styles/global.css")} />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href={Astro.resolve("/")}>Gayathri Mohan</a>
+        <a class="logo" href={withBase("/")}>Gayathri Mohan</a>
         <nav class="site-nav" aria-label="Primary">
-          <a href={Astro.resolve("/about")}>About</a>
-          <a href={Astro.resolve("/book")}>Book</a>
-          <a href={Astro.resolve("/speaking")}>Speaking</a>
-          <a href={Astro.resolve("/writing")}>Writing</a>
-          <a href={Astro.resolve("/press")}>Press</a>
-          <a href={Astro.resolve("/contact")}>Contact</a>
+          <a href={withBase("/about")}>About</a>
+          <a href={withBase("/book")}>Book</a>
+          <a href={withBase("/speaking")}>Speaking</a>
+          <a href={withBase("/writing")}>Writing</a>
+          <a href={withBase("/press")}>Press</a>
+          <a href={withBase("/contact")}>Contact</a>
         </nav>
       </div>
     </header>
