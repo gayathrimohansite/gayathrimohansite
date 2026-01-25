@@ -4,7 +4,7 @@ import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://gayathrimohansite.github.io",
-  base: "/gayathrimohansite",
+  site: "https://gayathri-mohan.com",
+  base: "/",
   integrations: [mdx(), react(), tailwind()],
 });
