@@ -13,8 +13,8 @@ interface FormStatus {
   message?: string;
 }
 
-// This URL will be replaced with your Google Apps Script Web App URL
-const GOOGLE_SCRIPT_URL = "__GOOGLE_SCRIPT_URL__";
+// Google Apps Script Web App URL for form submissions
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzzZF0RX0HUDrbWTIBcrZokQFbz0cbYmFkslSDtrEVtRAFdC9ABkrbz96JAkkSbPHdU/exec";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
@@ -37,15 +37,6 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus({ type: "submitting" });
-
-    // Check if the script URL has been configured
-    if (GOOGLE_SCRIPT_URL === "__GOOGLE_SCRIPT_URL__") {
-      setStatus({
-        type: "error",
-        message: "Contact form is not yet configured. Please email directly.",
-      });
-      return;
-    }
 
     try {
       const response = await fetch(GOOGLE_SCRIPT_URL, {
