@@ -144,6 +144,48 @@ import { withBase } from "../lib/base";
     </div>
   </section>
 
+  <!-- Training Section -->
+  <section class="section training-section">
+    <div class="container">
+      <div class="training-feature">
+        <div class="training-info">
+          <span class="feature-label">O'Reilly Live Training</span>
+          <h2>Generative AI for Software Testing</h2>
+          <p class="muted">
+            A hands-on live training covering practical workflows for integrating AI into your testing practice.
+            Learn to leverage GenAI tools for test automation, exploratory testing, and quality strategy.
+          </p>
+          <ul class="training-highlights">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Practical AI-assisted test generation
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Integrating LLMs into testing workflows
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Building AI-augmented quality strategies
+            </li>
+          </ul>
+          <div class="cta-row">
+            <a class="button primary" href="https://www.oreilly.com/live-events/generative-ai-for-software-testing/0642572016283/" target="_blank" rel="noreferrer">
+              View on O'Reilly
+            </a>
+            <a class="button secondary" href={withBase("/training")}>All training options</a>
+          </div>
+        </div>
+        <div class="training-visual">
+          <div class="oreilly-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="m9 9.5 2 2 4-4"/></svg>
+            <span class="badge-text">Live Training</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Recognition Section -->
   <section class="section recognition-section">
     <div class="container">
@@ -477,6 +519,81 @@ import { withBase } from "../lib/base";
     font-weight: 500;
     color: hsl(var(--foreground));
     margin: 0;
+  }
+
+  /* Training Section */
+  .training-section {
+    background: hsl(var(--primary) / 0.05);
+  }
+
+  .training-feature {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (max-width: 800px) {
+    .training-feature {
+      grid-template-columns: 1fr;
+    }
+
+    .training-visual {
+      order: -1;
+      justify-self: center;
+    }
+  }
+
+  .training-info h2 {
+    margin: 0 0 1rem;
+  }
+
+  .training-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+
+  .training-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    color: hsl(var(--foreground));
+    font-size: 0.95rem;
+  }
+
+  .training-highlights svg {
+    color: hsl(var(--primary));
+    flex-shrink: 0;
+  }
+
+  .training-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .oreilly-badge {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: hsl(var(--background));
+    border: 2px solid hsl(var(--primary));
+    border-radius: 50%;
+    color: hsl(var(--primary));
+    box-shadow: 0 16px 32px -8px hsl(var(--primary) / 0.2);
+  }
+
+  .badge-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   /* Recognition Section */
