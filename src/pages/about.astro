@@ -3,83 +3,673 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { withBase } from "../lib/base";
 ---
 
-<BaseLayout title="About" description="About Gayathri Mohan, technology executive and author.">
-  <section class="container hero hero-grid">
-    <div>
-      <p class="eyebrow">About</p>
-      <h1>Building AI-driven quality engineering programs with global impact.</h1>
-      <p>
-        Technology executive specializing in AI-driven Quality Engineering and large-scale delivery
-        transformation, with a track record of building global capabilities, shaping market-leading
-        strategies, and translating innovation into commercial outcomes.
-      </p>
-      <div class="cta-row">
-        <a class="button primary" href={withBase("/speaking")}>Invite Gayathri to speak</a>
-        <a class="button secondary" href={withBase("/contact")}>Contact</a>
-      </div>
-    </div>
-    <div class="hero-media">
-      <img src={withBase("/images/gayathri-mohan-headshot.svg")} alt="Portrait of Gayathri Mohan" />
-    </div>
-  </section>
+<BaseLayout title="About" description="Gayathri Mohan - Technology executive with 17 years of experience in AI-driven Quality Engineering and enterprise transformation.">
 
-  <section class="section">
-    <div class="container section-grid">
-      <div>
-        <h2>Thought leadership &amp; industry impact</h2>
-        <ul>
-          <li>
-            Author of O'Reilly's <em>Full Stack Testing</em>, covering end-to-end test automation,
-            CI/CD integration, and AI-driven quality engineering.
-          </li>
-          <li>
-            Co-author of <em>Perspectives of Agile Software Testing</em>, contributing expertise on
-            mobile automation and continuous testing in DevOps pipelines.
-          </li>
-          <li>
-            Featured in podcasts and enterprise webinars shaping executive conversations on quality
-            strategy and modern testing.
-          </li>
-        </ul>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="eyebrow">About</p>
+        <h1>Gayathri Mohan</h1>
+        <p class="current-role">Senior Director, Enterprise Solutions</p>
+        <p class="hero-description">
+          Technology executive with 17 years of experience leading enterprise-scale transformation
+          across <strong>AI-Driven Quality Engineering</strong> and <strong>Platform Engineering</strong>
+          within large global engineering organizations.
+        </p>
+        <div class="cta-row">
+          <a class="button primary" href={withBase("/contact")}>Get in Touch</a>
+          <a class="button secondary" href="https://linkedin.com/in/gayathrimohan" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </div>
-      <div>
-        <h2>Global influence &amp; recognition</h2>
-        <ul>
-          <li>
-            International conference speaker at Øredev, SeleniumConf, Test Istanbul, Agile Testing
-            Alliance, and Test Tribe.
-          </li>
-          <li>
-            Recognized among “100 Women in Tech to Follow and Learn From” by Agile Testing Days.
-          </li>
-          <li>
-            Active contributor to open knowledge sharing through blogs, frameworks, and community-led
-            initiatives.
-          </li>
-        </ul>
+      <div class="hero-image">
+        <img src={withBase("/images/gayathri-mohan-headshot.svg")} alt="Portrait of Gayathri Mohan" />
       </div>
     </div>
   </section>
 
+  <!-- Executive Summary -->
   <section class="section">
     <div class="container">
-      <h2>Innovation &amp; strategic frameworks</h2>
-      <div class="section-grid">
-        <div class="card">
-          <h3>Evolutionary Testing Strategy</h3>
-          <p>
-            A best-practice framework for designing scalable, future-ready enterprise testing
-            architectures that evolve with business needs.
-          </p>
+      <div class="summary-card">
+        <h2>Executive Summary</h2>
+        <p>
+          Proven track record of defining and executing technology strategies that deliver measurable
+          business outcomes, including modernization of legacy platforms, AI adoption at scale, and
+          creation of global capability models.
+        </p>
+        <p>
+          Recognized industry thought leader and O'Reilly author with deep expertise in modern testing,
+          DevOps, and emerging technologies. Experienced in building and scaling global teams, shaping
+          technology and service strategies, influencing senior client and executive stakeholders, and
+          translating innovation into repeatable, enterprise-ready operating models.
+        </p>
+        <p class="highlight">
+          Operating at the CTO scope with a strong focus on <strong>AI-led Quality Engineering</strong>,
+          <strong>platform modernization</strong>, and <strong>technology-enabled growth</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Achievements -->
+  <section class="section achievements-section">
+    <div class="container">
+      <h2>Key Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-category">
+          <h3>Enterprise Transformation & Strategy</h3>
+          <ul class="achievement-list">
+            <li>
+              <span class="achievement-metric">800+</span>
+              <span>Defined and executed enterprise-wide Quality Engineering strategy for a globally distributed organization of 800+ IT professionals</span>
+            </li>
+            <li>
+              <span class="achievement-metric">30% / 80%</span>
+              <span>Achieved 30% reduction in maintenance effort and 80% reduction in production defects</span>
+            </li>
+            <li>
+              <span class="achievement-metric">50%</span>
+              <span>Led multi-country mainframe modernization with 100+ member global delivery team, enabling 50% reduction in time-to-market</span>
+            </li>
+            <li>
+              <span class="achievement-metric">Top 25</span>
+              <span>Co-created Thoughtworks' Global AI Strategy, driving AI-assisted software delivery adoption across top 25 strategic clients within six months</span>
+            </li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>IoT Testing Atlas</h3>
-          <p>
-            A comprehensive testing framework for complex IoT ecosystems, focused on reliability,
-            security, performance, and scalability.
-          </p>
+        <div class="achievement-category">
+          <h3>Global Capability & Organization Building</h3>
+          <ul class="achievement-list">
+            <li>
+              <span class="achievement-metric">Global QA SME</span>
+              <span>Established and scaled the Global Quality Engineering function at Thoughtworks, defining firm-wide standards for QE practices</span>
+            </li>
+            <li>
+              <span class="achievement-metric">200+</span>
+              <span>Directed a 200+ member engineering organization as Engineering Director, building the company's AI/ML Center of Excellence</span>
+            </li>
+            <li>
+              <span class="achievement-metric">3x</span>
+              <span>Delivered 3x faster release cycles for a leading Asian bank through enterprise test strategy</span>
+            </li>
+            <li>
+              <span class="achievement-metric">UK Standard</span>
+              <span>Enterprise test strategy adopted as UK-wide standard by a leading credit score company</span>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience -->
+  <section class="section">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item current">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sept 2025 – Present</span>
+            <h3>Senior Director, Enterprise Solutions</h3>
+            <p class="timeline-company">StatusNeo, USA & UK</p>
+            <ul>
+              <li>Own and execute enterprise Quality Engineering and AI-assisted delivery strategy</li>
+              <li>Led design and rollout of AI-driven testing PoCs and production workflows</li>
+              <li>Architected AI-enabled testing solutions using AWS Bedrock and OpenAI models</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2024 – Jun 2025</span>
+            <h3>Quality & Cloud Architect</h3>
+            <p class="timeline-company">ClearRoute, USA & UK</p>
+            <ul>
+              <li>Hybrid Head of QA and Head of Platform Engineering for global car rental enterprise</li>
+              <li>QE strategy for 7-year mainframe modernization involving 800+ IT staff</li>
+              <li>Led platform initiatives: developer portals, ephemeral AWS environments, CI/CD enablement</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Mar 2024 – Aug 2024</span>
+            <h3>Global AI Leadership</h3>
+            <p class="timeline-company">Thoughtworks</p>
+            <ul>
+              <li>Core member of Chief AI Officer's Global AI Leadership Team</li>
+              <li>Translated AI strategy into executable OKRs across regions</li>
+              <li>AI learning programs adopted by 50% of organization within three months</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jul 2018 – Mar 2024</span>
+            <h3>Head of QA (Client Leadership Roles)</h3>
+            <p class="timeline-company">Thoughtworks</p>
+            <ul>
+              <li>Head of QA / Quality Engineering leader for multiple large enterprise clients</li>
+              <li>Industries: banking, finance, retail, education, transportation, startups</li>
+              <li>Defined enterprise-grade QE strategies covering automation, CI/CD, security, and observability</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2018 – Jan 2021</span>
+            <h3>Engineering Director / Office Technology Principal</h3>
+            <p class="timeline-company">Thoughtworks</p>
+            <ul>
+              <li>Technology strategy for regional engineering center</li>
+              <li>Built internal AI/ML capability, delivered 27 AI/ML PoCs</li>
+              <li>200+ open-source contributions, conferences, and industry engagement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thought Leadership -->
+  <section class="section thought-leadership-section">
+    <div class="container">
+      <h2>Thought Leadership & Industry Impact</h2>
+      <div class="thought-grid">
+        <div class="thought-card">
+          <div class="thought-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h4>O'Reilly Author</h4>
+          <p><em>Full Stack Testing</em> – translated into multiple languages; currently authoring 2nd edition with AI capabilities</p>
+        </div>
+        <div class="thought-card">
+          <div class="thought-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="m9 9.5 2 2 4-4"/></svg>
+          </div>
+          <h4>O'Reilly Live Course</h4>
+          <p>Conducted O'Reilly Live Course on Generative AI for Software Testing</p>
+        </div>
+        <div class="thought-card">
+          <div class="thought-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/><path d="m15 5 3 3"/></svg>
+          </div>
+          <h4>Published Author</h4>
+          <p>Published on <strong>martinfowler.com</strong> – Threat Modeling Guide for Software Teams</p>
+        </div>
+        <div class="thought-card">
+          <div class="thought-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+          </div>
+          <h4>International Speaker</h4>
+          <p>Øredev, SeleniumConf, Test Istanbul, Agile Testing Alliance, Test Tribe, Harness Webinars</p>
+        </div>
+        <div class="thought-card">
+          <div class="thought-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h4>Industry Recognition</h4>
+          <p>Recognized among <strong>100 Women in Tech to Follow and Learn From</strong> by Agile Testing Days</p>
+        </div>
+        <div class="thought-card">
+          <div class="thought-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h4>Framework Creator</h4>
+          <p>Creator of <strong>Evolutionary Testing Strategy</strong> and <strong>IoT Testing Atlas</strong> frameworks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas of Expertise -->
+  <section class="section">
+    <div class="container">
+      <h2>Areas of Expertise</h2>
+      <div class="expertise-grid">
+        <div class="expertise-category">
+          <h3>Executive & Leadership</h3>
+          <div class="expertise-tags">
+            <span class="tag">Technology & AI Strategy</span>
+            <span class="tag">Quality Engineering Transformation</span>
+            <span class="tag">Enterprise Modernization</span>
+            <span class="tag">Global Delivery Models</span>
+            <span class="tag">Operating Model Design</span>
+            <span class="tag">Senior Stakeholder Influence</span>
+            <span class="tag">Change Management</span>
+            <span class="tag">Sales Enablement</span>
+          </div>
+        </div>
+        <div class="expertise-category">
+          <h3>Engineering & Platforms</h3>
+          <div class="expertise-tags">
+            <span class="tag">Test Architecture</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">Playwright</span>
+            <span class="tag">Cypress</span>
+            <span class="tag">Appium</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">GitLab Actions</span>
+            <span class="tag">ArgoCD</span>
+            <span class="tag">AWS</span>
+            <span class="tag">JMeter</span>
+            <span class="tag">Gatling</span>
+            <span class="tag">SAST/DAST</span>
+            <span class="tag">Pact</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="expertise-category">
+          <h3>AI & Emerging Tech</h3>
+          <div class="expertise-tags">
+            <span class="tag">AI-Assisted Test Coding</span>
+            <span class="tag">Copilot & Cursor</span>
+            <span class="tag">MCP Servers</span>
+            <span class="tag">AI Exploratory Testing</span>
+            <span class="tag">Custom GPTs</span>
+            <span class="tag">AI Test Data Generation</span>
+            <span class="tag">AI Threat Modeling</span>
+            <span class="tag">AI Testing Agents</span>
+            <span class="tag">AI-Driven Security</span>
+            <span class="tag">IoT Testing</span>
+            <span class="tag">Chaos Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section education-section">
+    <div class="container">
+      <div class="education-content">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>Bachelor of Engineering (ECE)</h3>
+          <p>Anna University, Chennai, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container cta-content">
+      <h2>Let's Connect</h2>
+      <p class="muted">
+        Whether you're looking for a keynote speaker, corporate training, strategic consulting,
+        or want to discuss AI-driven quality engineering — I'd love to hear from you.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href={withBase("/contact")}>Get in Touch</a>
+        <a class="button secondary" href={withBase("/speaking")}>Speaking & Training</a>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(180deg, hsl(var(--secondary) / 0.3) 0%, hsl(var(--background)) 100%);
+    padding: 4rem 0 3rem;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (max-width: 800px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .hero-image {
+      order: -1;
+    }
+
+    .cta-row {
+      justify-content: center;
+    }
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin: 0.5rem 0 0.5rem;
+    line-height: 1.1;
+  }
+
+  .current-role {
+    font-size: 1.15rem;
+    color: hsl(var(--primary));
+    font-weight: 500;
+    margin: 0 0 1rem;
+  }
+
+  .hero-description {
+    font-size: 1.05rem;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-description strong {
+    color: hsl(var(--foreground));
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 24px 48px -16px hsl(var(--foreground) / 0.15);
+  }
+
+  @media (max-width: 800px) {
+    .hero-image img {
+      max-width: 260px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  /* Summary Card */
+  .summary-card {
+    padding: 2rem;
+    background: hsl(var(--secondary) / 0.5);
+    border-radius: 16px;
+    border: 1px solid hsl(var(--border));
+  }
+
+  .summary-card h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .summary-card p {
+    line-height: 1.7;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .summary-card .highlight {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    background: hsl(var(--background));
+    border-left: 3px solid hsl(var(--primary));
+    border-radius: 0 8px 8px 0;
+    color: hsl(var(--foreground));
+  }
+
+  .summary-card .highlight strong {
+    color: hsl(var(--primary));
+  }
+
+  /* Achievements Section */
+  .achievements-section {
+    background: hsl(var(--primary) / 0.03);
+  }
+
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    .achievements-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .achievement-category h3 {
+    font-size: 1.1rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid hsl(var(--primary) / 0.2);
+  }
+
+  .achievement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .achievement-list li {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid hsl(var(--border));
+    align-items: flex-start;
+  }
+
+  .achievement-list li:last-child {
+    border-bottom: none;
+  }
+
+  .achievement-metric {
+    flex-shrink: 0;
+    min-width: 80px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: hsl(var(--primary));
+    background: hsl(var(--primary) / 0.1);
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .achievement-list li span:last-child {
+    font-size: 0.95rem;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.5;
+  }
+
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: hsl(var(--border));
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: -2rem;
+    top: 0.25rem;
+    width: 14px;
+    height: 14px;
+    background: hsl(var(--background));
+    border: 2px solid hsl(var(--border));
+    border-radius: 50%;
+  }
+
+  .timeline-item.current .timeline-marker {
+    background: hsl(var(--primary));
+    border-color: hsl(var(--primary));
+  }
+
+  .timeline-content {
+    padding: 1.25rem 1.5rem;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: 12px;
+  }
+
+  .timeline-item.current .timeline-content {
+    border-color: hsl(var(--primary) / 0.3);
+    background: hsl(var(--primary) / 0.03);
+  }
+
+  .timeline-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: hsl(var(--primary));
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0.25rem;
+  }
+
+  .timeline-company {
+    font-size: 0.95rem;
+    color: hsl(var(--muted-foreground));
+    margin: 0 0 0.75rem;
+  }
+
+  .timeline-content ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .timeline-content li {
+    font-size: 0.9rem;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.6;
+    margin-bottom: 0.35rem;
+  }
+
+  /* Thought Leadership */
+  .thought-leadership-section {
+    background: hsl(var(--secondary) / 0.5);
+  }
+
+  .thought-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .thought-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: hsl(var(--background));
+    border-radius: 12px;
+    border: 1px solid hsl(var(--border));
+  }
+
+  .thought-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(var(--primary) / 0.1);
+    color: hsl(var(--primary));
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .thought-card h4 {
+    font-size: 1rem;
+    margin: 0 0 0.35rem;
+  }
+
+  .thought-card p {
+    font-size: 0.9rem;
+    color: hsl(var(--muted-foreground));
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .thought-card strong {
+    color: hsl(var(--foreground));
+  }
+
+  /* Expertise Section */
+  .expertise-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .expertise-category h3 {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    color: hsl(var(--primary));
+  }
+
+  .expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    background: hsl(var(--secondary));
+    border: 1px solid hsl(var(--border));
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: hsl(var(--foreground));
+  }
+
+  /* Education Section */
+  .education-section {
+    background: hsl(var(--primary) / 0.03);
+  }
+
+  .education-content {
+    max-width: 600px;
+  }
+
+  .education-item h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.25rem;
+  }
+
+  .education-item p {
+    color: hsl(var(--muted-foreground));
+    margin: 0;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    background: hsl(var(--secondary));
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .cta-content h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-content .cta-row {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+</style>
